@@ -1,0 +1,483 @@
+body {
+  margin:0;/*nu vreau sa am margini in jurul elementelor mele. Practic elimin orice spatiu dintre marginea elementului meu si marginea paginii */
+  background-color: #f9f9f9;
+}
+
+/* HOME PAGE */
+
+
+header {
+  height:1200px; /* inaltimea header-ului - a fost ales astfel incat imaginea sa arate bine */
+  background-image: url("gallery images/nav_background.avif"); /* imaginea de fundal */
+  display: flex; /*elementele continute in header le pun din pozitia de o coloana una sub alta intr-o linie una langa alta */
+  background-size:cover; /* imaginea de fundal se acopera complet antetul (fara el ar aparea imaginea de mai multe ori astfel incat sa acopere tot headerul) */
+  justify-content: space-between;  /*aliniaza elementele la marginea stanga si dreapta (primul element il pune la stanga, ultimul la dreapta si cele din interior sunt distribuite uniform intre cele 2 */
+  opacity: 0.8; /* opacitate aplicata pt imaginea de fundal */
+  margin-bottom: 40px; /* margin-bottom pentru a crea spatiu intre antet si continut */
+}
+
+header img{
+  width:300px;
+  height:300px;
+}
+
+/* in fiecare zi...*/
+
+header .slog1 {
+  align-self: center;  /*aliniere pe verticala in centru */
+  padding: 50px; /* spatiu in jurul textului */
+  border: 10px solid white; /* border pentru text */
+  text-transform: uppercase; /* transforma textul in litere mari */
+  box-shadow:10px 10px rgba(255,255,255,0.5); /* umbra box-ului */
+}
+
+
+.slog1:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);/* umbra devine neagra  */
+}
+ /*............*/
+
+
+/*nav bar */
+
+nav {
+  margin-right: 30px; /* adaugă un spațiu de 20px la dreapta intre ultimul element (contact) si marginea paginii */
+  margin-top: 20px; /* adaugă un spațiu de 20px dintre acest nav si marginea paginii */
+}
+
+nav ul {
+  list-style: none; /*elimina stilurile implicite ale listei (acele puncte) */
+  display: flex; /* afișează elementele dintr-o coloana int-un rand */
+}
+
+nav li {
+  margin-left: 20px; /* adauga spatiu intre fiecare element din lista */
+}
+
+nav a {
+  color: pink;
+  text-decoration: none; /* elimina sublinierea textului - elem de timp ancora sunt subliniate */
+  font-size: 25px; /* dimensiunea fontului */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff; /* schimba culoarea textului la hover */
+}
+
+/*partea de header responsive */
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slog1 {
+    text-align: center;
+  }
+  nav a{
+    color:#d13385;
+    font-weight: bold;
+  }
+  
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+}
+
+
+/* STOP HEADER */
+
+/*A DOUA SECTIUNE - TEXT SI IMAGINE */
+
+
+#text-2 { /* Lovebrew. Pentru o cafea mai bună decât dragostea la prima vedere*/
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 20px; /* adauga margine la stanga textului */
+}
+
+.image-section-home { /*div-ul ce contine imaginea */
+  max-width:50%; /*latimea maxima a imaginii este pana la jumatatea dimensiunii body-ului, de aceea vedem ca marginea imaginii este fix la jumatatea paginii*/
+  margin:auto; 
+  /*justify content este un element care functioneaza doar pt un element flex */
+}
+
+#image2-home:hover {/*clasa imaginii */
+  transform: scale(1.04); /*mareste dimensiunea imaginii cand dau hover pe ea */
+  transition: all 0.2s ease-in-out; /*tranzitia de la dimensiunea originala la dimensiunea marita sa se faca in 0.2s */
+}
+
+#image2-home { /*clasa imaginii */
+  height: 600px; /* specifică înălțimea imaginii */
+}
+
+.additional-section { /*div pentru text aditional */
+  max-width: 800px; /*daca s-ar elimina aceasta, textul meu s-ar aseza pe toata suprafata de width a paginii*/
+  margin: auto; /*pt centrarea unui element pe orizontala. marginea stanga si dreapta sunt setate automat egale, astfel incat elementul este plasat in centrul elementului parinte*/
+  margin-top: 50px;
+}
+
+.additional-section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.additional-section p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+} 
+
+
+@media screen and (max-width: 768px) {
+ .image-section-home {
+    max-width: 100%;
+  }
+  
+  .additional-section{
+    margin: 10px;
+    
+  }
+}
+/* STOP MIDDLE PAGE */ 
+
+
+.image3-container-home {
+  display: flex; /*elementele dintr-o coloana sunt acum asezate pe o linie si au o distantiere intre ele*/
+  justify-content: center;  /*elementele sunt asezate in centrul containerului */ 
+  flex-wrap: wrap; /* cand imaginea se micsoreaza, elementele daca nu mai incap pe acea linie, se ia un element din coada si se pune dedesubt
+  astfel se creeaza o alta linie. in cazul meu cand miscorez paginea pe o linie am loc doar de un element (o imagine) si de aceea se pun unele
+  sub altele ca intr-o coloana  */
+  
+  
+}
+
+.image3-container-home img { /*cele 4 imagini cu produse de pe home page */
+  width: 300px; 
+  height: 300px;
+  margin: 100px; /* adaugă un spațiu de 100px în jurul imaginii */
+  border-radius: 20px; /*rotunjeste imaginea la colturi */
+}
+
+.product-name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-price {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* ancora care ne duce la pagina de meniu */
+.view-menu {
+  display: block;/*ocupa intreaga latime disponibila pe linie */
+  text-align: center; /*textul din casuta in centreaza*/
+  margin:auto; /*efectiv acest "buton" este centrat in pagina */
+  width:300px;
+  margin-top: 50px;/*o distanta intre buton si produse */
+  padding: 20px 20px; /*adauga spatiu inauntrul elementului meu (arata mai gras)*/
+  background-color: #ff8fc9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.view-menu:hover {
+  background-color: #d31979;
+}
+
+
+/* home-page reviews */
+.section-reviews {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /*textul din casute este centrat */
+  display: flex; /*permite elementelor din container sa fie asezate mai flexibil */
+  flex-direction: column;/*specifica cum for fi afisate elemmentele din container*/
+  align-items: center; /*casutele de review sunt centrate*/
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);/*creeaza acea bordura/casuta */
+  /*primul element  pune umbra in partea dreapta a boxului
+  al doilea element pune umbra in partea de jos a boxului
+  si al treilea element blureaza umbram, dar blureaza tot boxul  */
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.review-text {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.review-author {
+  font-style: italic;
+  text-align: right;
+  font-size: 16px;
+}
+
+/*stop review section */
+
+
+/* social icons home page */
+
+.social-icons-home-container {/*div-ul ce tine titlul si icons */
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.social-icons-home-container  {
+  font-size: 22px;
+}
+
+.social-icons-home { /*clasa pt icons */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons-home a { /*s-a creat acel fundal pt icons astfel incat sa se potriveasca pe icons-urile originale */
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: #ff8fc9;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons-home a:hover {
+  transform: translateY(-2px);
+}
+
+.social-icons-home img {
+  width: 60px;
+  height: 60px;
+}
+
+/* FOOTER */
+footer { /*div-ul ce contine cele 3 elementee - adresa, program, contact*/
+  max-width: 800px;
+  margin: auto; /*centreaza elementele */
+  display: flex; /*pune elementele unele langa altele - fara ar fi fost intr-o coloana */
+}
+
+.address-section,
+.schedule-section,
+.contact-section {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.address-section h2,
+.schedule-section h2,
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.address-section p,
+.schedule-section p,
+.contact-section p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+/*.............*/
+
+/*STOP HOME PAGE */
+
+
+
+/*BOOK A TABLE - CONTACT */
+/* Stilizare input */
+
+.book-table h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.book-table {
+  margin:auto;
+  max-width: 600px;
+  font-size: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+  margin-bottom: 10px;
+  width: 100%; /*maxim de 600px */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+
+input[type="submit"] {
+  background-color: #ff8fc9;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: sans-serif;
+  display: block;
+  margin:auto;
+  margin-bottom: 40px;
+}
+
+input[type="submit"]:hover {
+  background-color: #d13385;
+}
+
+
+/*MENIU LIST */
+
+.menu-section-all {
+  max-width: 800px; /*sectiunea ocupa doar 800px din dimensiunea paginii */
+  margin: auto; /*sa centrez continutul sectiunii in centrul paginii */
+}
+
+.menu-section-all h1 {
+  text-align: center;
+  font-size: 33px;
+}
+
+.menu-container-list {
+  padding: 20px;
+  text-align: center;/*numele produsului e la centru*/
+}
+
+.menu-container-list ul {
+  list-style: none;/*elimina acel punctulet de la fiecare li */
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.menu-container-list h3{
+  font-size: 28px;
+  margin-bottom:50px;
+}
+
+.menu-container-list li {
+  margin: 10px;/*distanta intre fiecare produs */
+  font-size: 22px;
+  padding: 5px 10px;/*mareste casuta pt produse */
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #F7DFF6;
+}
+
+.menu-container-list li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .menu-container-list li {
+    width: 400px;
+  }
+}
+
+/*STOP MENIU LIST */
+
+/* our story */
+
+.ourstory1 {
+  align-self: center; /* aliniere pe verticala in centru */
+  padding: 50px; /* spatiu in jurul textului */
+  border: 10px solid white; /* border pentru text */
+  text-transform: uppercase; /* transforma textul in litere mari */
+  box-shadow: 10px 10px 0px rgba(255,255,255,0.5); /* umbra box-ului */
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5); /* un fel de umbra textului */
+}
+
+.ourstory1:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);/* umbra devine neagra  */
+}
+
+.our-story-container {
+  width: 80%;
+  margin:auto;
+  padding: 50px;
+  background-color: #ff8fc9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.our-story-container p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+/*slideshow galerie.html */
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#left{
+ left:0;
+ align-self: center;
+
+}
+
+#right{
+  right:0;
+  align-self: center;
+  
+}
+
+#right,
+#left {
+  
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: pink;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ 
+ 
+}

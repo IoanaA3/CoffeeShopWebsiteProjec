@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="my-style.css" />
+    <title>Lovebrew</title>
+  </head>
+  <body>
+    <header>
+        <a href="home.html"><img src="gallery images/logo.png" alt="Numele cafenelei" /></a>
+        <h1 class = "slog1">Rezervă-ți masa și trăiește experiența unei cafenele autentice!</h1>
+      <nav>
+        <ul>
+          <li><a href="ourstory.html">Our Story</a></li>
+          <li><a href="meniu.php">Meniu</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="rezervare.html">Rezervare</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <form action="salveaza_rezervare.php" method="post" class="book-table">
+      <h2>Book a table</h2>
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" name="nume" required><br><br>
+  
+      <label for="prenume">Prenume:</label>
+      <input type="text" id="prenume" name="prenume" required><br><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+  
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" required><br><br>
+  
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required><br><br>
+  
+      <label for="ora">Ora:</label>
+      <input type="time" id="ora" name="ora" required><br><br>
+  
+      <label for="mesaj">Mesaj:</label>
+      <textarea id="mesaj" name="mesaj"></textarea><br><br>
+  
+      <input type="submit" value="Trimite">
+  </form>
+  
+
+    <div class="social-icons-home-container">
+      <h2>Let's Stay in Touch</h2>
+      <div class="social-icons-home">
+        <a href="https://www.facebook.com/" target="_blank"><img src="gallery images/facebook-icon.png" alt="Icon Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="gallery images/instagram-icon.png" alt="Icon Instagram"></a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="address-section">
+        <h2>Adresa noastră</h2>
+        <p>Str. Alexandru Ioan Cuza nr. 18</p>
+        <p>Iași, Iași</p>
+        <p>Cod poștal 700500</p>
+      </div>
+      <div class="schedule-section">
+        <h2>Program</h2>
+        <p>Luni - Sâmbătă: 08:00 - 22:00</p>
+        <p>Duminică: 12:00 - 22:00</p>
+      </div>
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <p>Telefon: +40721234567</p>
+        <p>E-mail: office@lovebrew.com</p>
+      </div>
+  </footer>
+  </body>
+</html>

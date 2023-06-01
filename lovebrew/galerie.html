@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie</title>
+    <link rel="stylesheet" href="my-style.css" />
+  </head>
+  <body>
+    <header>
+        <a href="home.html"><img src="gallery images/logo.png" alt="Numele cafenelei" /></a>
+        <h1 class = "slog1">Prezentarea locatiei si a produselor</h1>
+      <nav>
+        <ul>
+          <li><a href="ourstory.html">Our Story</a></li>
+          <li><a href="meniu.php">Meniu</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="rezervare.html">Rezervare</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="image-section">
+      <div class="galeria">
+        <a id="left" onclick="plusDivs(-1)">&#10094;</a>
+        <div class="mySlides"><img src="Imagini-galerie/1.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/2.webp"></div>
+        <div class="mySlides"><img src="Imagini-galerie/3.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/4.webp"></div>
+        <div class="mySlides"><img src="Imagini-galerie/5.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/6.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/7.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/8.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/9.webp"></div>
+        <div class="mySlides"><img src="Imagini-galerie/10.webp"></div>
+        <div class="mySlides"><img src="Imagini-galerie/11.jpeg"></div>
+        <div class="mySlides"><img src="Imagini-galerie/12.jpeg"></div>
+        <a id="right" onclick="plusDivs(+1)">&#10095;</a>
+      </div>
+        
+
+   <script>
+      //se va tine evidenta imaginilor
+        var slideIndex = 1;
+        //se va afisa prima imagine cand pagina este incarcata
+    showDivs(slideIndex);
+    
+    //pentru a da imaginile inainte sau inapoi - 1 la imaginea urmatoare, -1 la imaginea anterioara
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    //afisarea imaginii curente, restul sunt ascunse
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides"); //va fi un fel de array care contine toate imaginile
+      if (n > x.length) {slideIndex = 1} //daca nr imaginii pe care vreau s-o vad e mai mare ca nr de
+      //imagini in total, atunci am ajuns la finalul imaginilor si mi se afiseaza prima imagine
+      if (n < 1) {slideIndex = x.length} ;
+      //trece prin fiecare imagine din galerie si o ascunde
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      //este ok -1, deoarece indexarea incepe de la 0
+      x[slideIndex-1].style.display = "block"; //se afiseaza imaginea curenta
+    }
+    </script>
+    
+    </div>
+
+    <div class="social-icons-home-container">
+      <h2>Let's Stay in Touch</h2>
+      <div class="social-icons-home">
+        <a href="https://www.facebook.com/" target="_blank"><img src="gallery images/facebook-icon.png" alt="Icon Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="gallery images/instagram-icon.png" alt="Icon Instagram"></a>
+      </div>
+    </div>
+
+  
+    <footer>
+      <div class="address-section">
+        <h2>Adresa noastră</h2>
+        <p>Str. Alexandru Ioan Cuza nr. 18</p>
+        <p>Iași, Iași</p>
+        <p>Cod poștal 700500</p>
+      </div>
+      <div class="schedule-section">
+        <h2>Program</h2>
+        <p>Luni - Sâmbătă: 08:00 - 22:00</p>
+        <p>Duminică: 12:00 - 22:00</p>
+      </div>
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <p>Telefon: +40721234567</p>
+        <p>E-mail: office@lovebrew.com</p>
+      </div>
+  </footer>
+  </body>
+</html>

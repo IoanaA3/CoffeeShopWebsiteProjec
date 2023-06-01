@@ -1,0 +1,60 @@
+Rezervare 1: 
+
+Nume Petrescu prenume Lucian email petrescu_lucian@yaho telefon 714675190 data programarii 2023-05-24 ora programarii 23:30:00 comentariu Abia astept!
+
+
+
+Rezervare 2: 
+
+Nume Popescu prenume Adriana email popescu_adriana20@ya telefon 752341086 data programarii 2023-05-26 ora programarii 15:30:00 comentariu 
+
+
+
+Rezervare 3: 
+
+Nume Ion prenume Andreea email andreea_ion1990@yaho telefon 721325423 data programarii 2023-05-01 ora programarii 21:30:00 comentariu 
+
+
+
+Rezervare 4: 
+
+Nume Zugravu prenume Elena email zug_elena2003@yahoo. telefon 721356712 data programarii 2023-04-04 ora programarii 21:00:00 comentariu As dori ca masa rezervata sa fie cu vedere la strada. Multumesc!
+
+
+
+Rezervare 5: 
+
+Nume Zugravu prenume Elena email zug_elena2003@yahoo. telefon 721356712 data programarii 2023-04-04 ora programarii 21:00:00 comentariu As dori ca masa rezervata sa fie cu vedere la strada. Multumesc!
+
+
+
+Rezervare 6: 
+
+Nume Rusu prenume Andrei email rusu_andrei13@yahoo. telefon 772654134 data programarii 2023-05-30 ora programarii 13:50:00 comentariu As dori o masa la geam, va rog.
+
+
+
+Rezervare 7: 
+
+Nume Apostol prenume Dumitru email apostol_dumitru1970@ telefon 743163901 data programarii 2023-06-01 ora programarii 16:40:00 comentariu 
+
+
+
+Rezervare 8: 
+
+Nume Bucsinescu prenume Andreea email andreea_bucsinescu22 telefon 765234981 data programarii 2023-06-20 ora programarii 21:00:00 comentariu 
+
+
+
+Rezervare 9: 
+
+Nume Pavel prenume Ionut email pavel_ionut21@gmail. telefon 772196641 data programarii 2023-05-17 ora programarii 12:07:00 comentariu ok
+
+
+
+Rezervare 10: 
+
+Nume q prenume d email ionaa@gmail.com telefon 772654134 data programarii 2023-05-19 ora programarii 21:20:00 comentariu 0
+
+
+
